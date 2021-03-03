@@ -98,8 +98,13 @@ body {
   -ms-flex-item-align: center;
   align-self: center;
   background: transparent;
+  transition: border .3s,background-color .3s;
 }
 
+.section-btn:hover {
+  border: 1px solid silver;
+  background-color: #000;
+}
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
