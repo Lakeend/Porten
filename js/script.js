@@ -9,12 +9,4 @@ menuBtn.addEventListener('click', function() {
     topContent.classList.toggle('active');
 });
 
-window.addEventListener('click', function(e) {
-    if(!e.target.getAttribute('data-menu')) {
-        if(e.target.parentNode.getAttribute('data-menu')) {
-            return
-        }
-        document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
-    }
-});
 /* Menu END*/
